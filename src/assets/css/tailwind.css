@@ -1,0 +1,26 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer utilities {
+  
+    .ua-scroll-bar::-webkit-scrollbar {
+      @apply ua-w-2;
+    }
+  
+    .ua-scroll-bar::-webkit-scrollbar-track-piece {
+      @apply ua-bg-light-grey; 
+      @apply ua-rounded-full; 
+    }
+  
+    .ua-scroll-bar::-webkit-scrollbar-thumb {
+      @apply ua-bg-grey-200; 
+      @apply ua-rounded-full;
+    }
+
+    .ua-scroll-bar-hidden::-webkit-scrollbar {
+      display: none;
+    }
+  }
